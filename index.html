@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    
+    <title>Aside - Free HTML5 Bootstrap 4 Template by ProBootstrap.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Free HTML5 Website Template by ProBootstrap.com" />
+    <meta name="keywords" content="free bootstrap 4, free bootstrap 4 template, free website templates, free html5, free template, free website template, html5, css3, mobile first, responsive" />
+    <meta name="author" content="ProBootstrap.com" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/open-iconic-bootstrap.min.css">
+    
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="static/css/icomoon.css">
+    <link rel="stylesheet" href="static./css/animate.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+  </head>
+  <body>
+    <aside class="probootstrap-aside js-probootstrap-aside">
+      <a href="#" class="probootstrap-close-menu js-probootstrap-close-menu d-md-none"><span class="oi oi-arrow-left"></span> Close</a>
+      <div class="probootstrap-site-logo probootstrap-animate" data-animate-effect="fadeInLeft">
+        <a href="index.html" class="mb-2 d-block probootstrap-logo">Aside</a>
+        <p class="mb-0">相册展示 </p>
+
+      </div>
+      <div class="probootstrap-overflow">
+        <nav class="probootstrap-nav">
+          <ul>
+            <li class="probootstrap-animate active" data-animate-effect="fadeInLeft"><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+
+    <main role="main" class="probootstrap-main js-probootstrap-main">
+      <div class="probootstrap-bar">
+        <a href="#" class="probootstrap-toggle js-probootstrap-toggle"><span class="oi oi-menu"></span></a>
+        <div class="probootstrap-main-site-logo"><a href="index.html">Aside</a></a></div>
+      </div>
+      <div class="card-columns"></div>
+    
+        <div class="card">
+            <img class="card-img-top probootstrap-animate" src="./img/2.jpg" alt="Card image cap" data-animate-effect="fadeIn">
+        </div>
+        
+
+
+    </main>
+
+    
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <!-- <script src="static/js/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="static/js/jquery.waypoints.min.js"></script> -->
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="static/js/imagesloaded.pkgd.min.js"></script>
+
+    <script src="static/js/index.js"></script>
+    <!-- <script src="./src/main.js"></script>//引入main.js文件 -->
+    <!-- <script type="text/javascript" src="test.json"></script> -->
+    <!-- <script type="text/javascript" src="./imgInfo/imgInfo.json"></script> -->
+    <script>
+ 
+      // 页面初始化 发送ajax请求图片
+
+      
+      $(function() {
+        // console.log("正在请求数据……")
+          // $.ajax({
+          //     type: "GET",
+          //     url: "./imgInfo/imgInfo.json",
+          //     // url: "http://127.0.0.1:8082/test.json",
+          //     // data: "",
+          //     dataType: 'json',  
+          //     // crossDomain: true,  
+          //     success: function(data){
+          //       console.log("请求成功")
+          //       console.log(data)
+          //     },
+          //     error:function(data){
+          //   　　console.log('错误')
+          //       console.log("错误信息",data)
+          //    }
+          // });
+        var str ='';
+        for(var i = 1; i<=100;i++){
+            str += ` <div class="card">
+            <img class="card-img-top probootstrap-animate" src="img/${i}.jpg" ></div>`;
+        }
+
+        $('.card-columns').html(str);
+      //  $(".card").classList.remove(".img-loaded")
+      });
+
+
+
+
+
+
+// $(function () {
+//     $.ajax({
+//       type: "GET",
+//       dataType: "json",
+//       url: "test.json",
+//       success: function (result) {
+//         var str = "";
+//           $.each(result,function(index,obj){    
+
+          // str += "<div class='card'><img class='card-img-top probootstrap-animate' src=" + obj["url"] + "alt=" + obj["name"] + "data-animate-effect='fadeIn'></div>";                   
+          // // str += "<a href='" + obj["url"] + "' target='_blank'><img src='" + obj["img"] + "' /></a>";                   
+          // });
+//         $("#ok").html(str);
+//       }
+//     });
+// });
+    </script>
+    
+  </body>
+</html>
